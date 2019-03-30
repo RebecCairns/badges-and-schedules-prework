@@ -16,7 +16,7 @@ def assign_rooms(arr)
   arr2 = Array.new 
   numArr = ["1", "2", "3", "4", "5", "6", "7"]
   counter = 0
-  while(counter < arr.length)
+ arr.each do 
     arr2.push("Hello, " +  arr[counter] + "! You'll be assigned to room " + numArr[counter] + "!")
     counter += 1
   end 
@@ -27,7 +27,7 @@ def printer(attendees)
   arr2 = assign_rooms(attendees)
   arr1.concat(arr2)
   counter = 0 
-  while(counter< arr1.length)
+  arr1.each do 
      puts arr1[counter]
      counter += 1 
   end    
