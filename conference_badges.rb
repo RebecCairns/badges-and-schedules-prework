@@ -6,7 +6,7 @@ end
 def batch_badge_creator(arr)
   arr2 = Array.new 
   counter = 0
-  while(counter < arr.length)
+  arr.each do 
     arr2.push("Hello, my name is " +  arr[counter] + ".")
     counter += 1
   end 
